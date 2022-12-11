@@ -1,17 +1,8 @@
 'use strict';
 
 
-// const names= ['Noah', 'Liam', 'Mason', 'Jacob', 'Robot', 'William', 'Ethan', 'Michael', 'Alexander'];
-// let result = names.map(function addPrefx(names) {
-//     return 'Mr' + ' ' + names;
-// })
-// console.log(result);
-
-
 const names= ['Noah', 'Liam', 'Mason', 'Jacob', 'Robot', 'William', 'Ethan', 'Michael', 'Alexander'];
 
-const addPrefix = names.map((i) => {
-  return 'Mr ' + i;
+const addPrefix = (array, prefix) => names.map((item) => `${prefix} ${item}`);
 
-})
-console.log(addPrefix);
+console.log(addPrefix(names, 'Mr'));
